@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Healthcare+</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="logo">Healthcare+</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="symptom.html">Symptom</a>
+    <a href="remedy.html">Remedy</a>
+    <a href="emergency.html">Emergency</a>
+    <a href="care.html">Care</a>
+    <a href="reminder.html">Reminder</a>
+  </div>
+</div>
+
+<div class="hero">
+  <h1>Your Health, Simplified</h1>
+  <p>AI-powered healthcare assistant</p>
+</div>
+
+<div class="grid">
+  <a href="symptom.html" class="card">🩺 Symptom Checker</a>
+  <a href="remedy.html" class="card">🌿 Home Remedies</a>
+  <a href="emergency.html" class="card">🚑 Emergency</a>
+  <a href="care.html" class="card">👶 Mother & Child</a>
+  <a href="reminder.html" class="card">⏰ Reminder</a>
+</div>
+
+<!-- CHAT -->
+<div class="chat-btn" onclick="toggleChat()">💬</div>
+
+<div class="chat-popup" id="chatPopup">
+  <div class="chat-header">
+    AI Assistant
+    <span onclick="toggleChat()">✖</span>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-input">
+    <input id="chatInput">
+    <button onclick="sendMsg()">Send</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
